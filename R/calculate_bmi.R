@@ -32,7 +32,7 @@ calculate_bmi <- function(weight_kg, height_cm){
     bmi < 18.5 ~ 'Underweight',
     bmi < 25.0 ~ 'Normal Weight',
     bmi < 30.0 ~ 'Overweight',
-    TRUE ~ 'obese',
+    TRUE ~ 'obes',
   )
 
   return(list(bmi=round(bmi,1),category=category))
